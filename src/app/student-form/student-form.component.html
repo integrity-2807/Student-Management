@@ -1,0 +1,41 @@
+<h2>Add Student</h2>
+
+<form (submit)="addStudent()" class="ml-2 mt-5 input-small">
+  <div class="form-group">
+    <label for="name">Name</label>
+    <input type="text" class="form-control" id="name" [(ngModel)]="student.name" name="name" required>
+  </div>
+
+  <div class="form-group">
+    <label for="email">Email</label>
+    <input type="email" class="form-control" id="email" [(ngModel)]="student.email" name="email" required>
+  </div>
+
+  <div class="form-group">
+    <label for="age">Age</label>
+    <input type="number" class="form-control" id="age" [(ngModel)]="student.age" name="age" required>
+  </div>
+
+  <div class="form-group">
+    <label for="grade">Grade</label>
+    <input type="text" class="form-control" id="grade" [(ngModel)]="student.grade" name="grade" required>
+  </div>
+
+  <div class="form-group">
+    <label for="course">Course</label>
+    <input type="text" class="form-control" id="course" [(ngModel)]="student.course" name="course" required>
+  </div>
+
+  <div class="form-group">
+    <label for="Department">Department</label>
+    <input type="text" class="form-control" id="department" [(ngModel)]="student.department" name="department" required>
+  </div>
+
+  <div class="form-group">
+    <label for="hostel">Hostel Name</label>
+    <input type="text" class="form-control" id="hostel" [(ngModel)]="student.hostel" name="hostel" required>
+  </div>
+
+  <button type="submit" class="btn btn-primary ">Add Student</button>
+</form>
+
